@@ -237,7 +237,7 @@ class HTTPUploadHandler(httpserver.BaseHTTPRequestHandler):
             accepted = [self.prefcode_tuple(lang) for lang in lhdr.split(',')]
             accepted.sort()
             accepted.reverse()
-            return [x[1] for x in accepted]
+            return [x[1].lower() for x in accepted]
         else:
             return []
 
