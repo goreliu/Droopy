@@ -540,7 +540,7 @@ function onunload() {
 }
 </script></head>
 <body>
-%(linkurl)s
+<!-- mine %(linkurl)s -->
 <div class="container">
 <div id="wrapform">
   <div id="form" class="box">
