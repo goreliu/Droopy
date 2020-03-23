@@ -570,6 +570,7 @@ successtmpl = '''
 <!doctype html>
 <html>
 <head><title> %(successtitle)s </title>
+<meta http-equiv="refresh" content="1">
 ''' + style + '''
 </head>
 <body>
@@ -1009,7 +1010,7 @@ def parse_args(cmd=None, ignore_defaults=False):
         description="Usage: droopy [options] [PORT]",
         epilog='Example:\n    droopy -m "Hi, this is Bob. You can send me a file." -p avatar.png'
     )
-    parser.add_argument("port", type=int, nargs='?', default=8000,
+    parser.add_argument("port", type=int, nargs='?', default=8888,
                         help='port number to host droopy upon')
     parser.add_argument('-d', '--directory', type=str, default='.',
                         help='set the directory to upload files to')
